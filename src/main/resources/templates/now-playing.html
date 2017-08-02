@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="movie.css"/>
+    <title>Title</title>
+</head>
+<body>
+<div class="navbar" >
+<nav class="nav">
+    <a href="/">home</a>
+    <a href="/now-playing"> now playing</a>
+    <a href="/medium-popular-long-name"> medium popular </a>
+</nav>
+</div>
+<h1>this is now playing</h1>
+
+<div class="all_movies">
+<div class="movies"  th:each="movie: ${movies}"  >
+    <img width="150px" th:src="'http://image.tmdb.org/t/p/original' + ${movie.posterPath} "/>
+    <span th:text="${movie.title}" ></span>
+</div>
+</div>
+</body>
+</html>

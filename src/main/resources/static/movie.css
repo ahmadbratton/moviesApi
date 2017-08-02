@@ -1,0 +1,25 @@
+body{
+    background-color: lightskyblue;
+}
+
+.all_movies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.movies{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    flex-basis: 15%;
+}
+
+h1{
+    display: flex;
+    color: white;
+    margin-left: 100px;
+}
+
+
